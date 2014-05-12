@@ -1,0 +1,127 @@
+{{extend 'common/layout.html'}}
+{{block index_menu}}
+<li data-submenu="profile" class="multi-menu">
+  <a href="{{=URL('index')}}" class="active"><span class="bullet"></span><i class="icon-user"><span>My profile</span></i></a>
+</li>
+
+{{end}}
+
+<!-- Intro -->
+<section id="intro">
+
+<!-- Container -->
+<div class="container">
+
+  <div class="sixteen columns">
+
+    <h1 class="page-title">[ <span>My profile</span> ]</h1>
+
+    <p class="lead">
+    A brief introduction to myself. If you want to know more about me, please
+    <a href="{{=URL('contact')}}">contact me</a> or leave a message 
+    <a href="{{=URL('comment')}}">here</a>
+    </p>
+
+  </div>
+
+</div><!-- / Container -->
+
+</section><!-- / Intro -->	
+
+
+
+<!-- Profile -->
+<section id="profile">
+
+<div class="profile-navbar"></div>
+
+<!-- Container -->
+<div class="container">		
+
+  <div class="five columns">
+
+    <!-- Profile Image -->
+    <div class="profile-image">
+      <img src="{{=URL('static', 'img/portrait.jpg')}}" alt="Myself"/>
+      <div class="white-bullet"></div>
+    </div>
+
+    <!-- Profile Info -->
+    <div class="profile-info">
+      <p><span class="bold">Full Name</span><span>Le Chang</span></p>
+      <p><span class="bold">Birthday</span><span>Sep 09. 1987.</span></p>					
+      <p><span class="bold">Lives in</span><span>Tokyo, Japan</span></p>					
+    </div>
+
+  </div>
+
+  <div class="eleven columns">
+
+    <!-- Profile Tabs -->
+    <ul class="profile-tabs">
+      <li><i class="icon-star-empty"></i></li>
+      <li class="active"><i class="icon-list"></i></li>						
+      <li><i class="icon-forward"></i></li>						
+      <li><i class="icon-retweet"></i></li>						
+      <li><i class="icon-bar-chart"></i></li>						
+    </ul>
+
+    <!-- Profile Tabs Content -->
+    <div class="profile-tabs-content">
+
+      <!-- My Story -->
+      <div>
+        <h2>My story</h2>
+        <p>{{=mystory}}</p>
+      </div>				
+
+      <!-- About Me -->
+      <div>
+        <h2>About me</h2>
+        <p>{{=aboutme}}</p>
+      </div>
+
+      <!-- My Hobbies -->
+      <div>
+        <h2>My hobbies</h2>
+        <p>{{=myhobbies}}</p>
+      </div>
+
+      <!-- Future Goals -->
+      <div>
+        <h2>Future goals</h2>
+        <p>{{=futuregoals}}</p>
+      </div>
+
+      <!-- Other Infos -->
+      <div>
+        <h2>Other infos</h2>
+        <p>{{=otherinfos}}</p>
+      </div>			
+
+    </div><!-- / Profile Tabs Content -->
+
+  </div>
+
+</div><!-- / Container -->
+
+</section><!-- / Profile -->	
+
+
+<!-- Twitter Feed -->
+<section id="twitter-feed">
+
+<!-- Container -->
+<div class="container">
+
+  <div class="three columns">
+
+    <div class="twitter-sign"><i class=""></i></div>
+
+  </div>
+
+</div><!-- / Container -->
+
+</section><!-- / Twitter Feed -->
+
+<!-- / Content -->

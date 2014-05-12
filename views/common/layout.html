@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>mychangle</title>
+	<meta name="description" content="Premium Personal Portfolio HTML5 Template">
+	<meta name="author" content="eriktailor">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" href="{{=URL('static', 'css/reset.css')}}">
+  <link rel="stylesheet" href="{{=URL('static', 'css/skeleton.css')}}">
+  <link rel="stylesheet" href="{{=URL('static', 'css/styleswitcher.css')}}">	
+  <link rel="stylesheet" href="{{=URL('static', 'css/layout.css')}}">
+  <link rel="stylesheet" href="{{=URL('static', 'css/animate.css')}}">	
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!--[if IE 9]> 
+		<style type="text/css">
+			.page-title, .profile-info p, .process-part, .contact-details li, #portfolio-wrapper {opacity: 1; filter: alpha(opacity=100);}
+		</style> 
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+	
+	<!-- Webfonts
+	================================================== -->	
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{=URL('static', 'font/font-awesome.min.css')}}">
+
+</head>
+<body class="red">
+
+<!-- Primary Page Layout
+================================================== -->
+
+<!-- Back Top -->
+<i id="back-top" class="icon-angle-up downscaled"></i>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+	<!-- Header -->
+	<header id="header" class="">	
+	
+		<!-- Name Area -->
+		<div class="name-area">
+			
+			<!-- Name -->
+			<h1><span class="logo"></span>LE CHANG</h1>
+      <p>A programmer falls in love with python </p>
+
+		</div>
+
+
+    <!-- Style Switcher Start ================================================== -->
+    <div id="styleswitcher">
+    
+    	<!-- Sliding Panel -->
+    	<div id="styleswitcher-panel">
+    		<span>Color Skin</span>
+    		<ul id="colors">
+    			<li class="color-01 active"><a href="#"></a></li>
+    			<li class="color-02"><a href="#"></a></li>						
+    		</ul>
+    	</div>
+    
+    	<!-- Side Tab -->
+    	<div id="styleswitcher-tab">
+    		<a href="#">&gt;</a>
+    	</div>
+    
+    </div>
+    <!-- Style Switcher End ==================================================== -->		
+
+
+    <!-- Navigation -->
+    <nav id="navbar">
+    
+    <!-- Container -->
+    <div class="container">
+    
+      <div class="sixteen columns">
+    
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+          <i class="icon-list"></i>
+        </div>	
+    
+      </div>
+    
+      <div class="sixteen columns">
+    
+        <!-- Menu Items -->
+        <ul class="menu">
+          {{block index_menu}}
+          <li>
+          <a href="{{=URL('index')}}"><i class="icon-user"><span>My profile</span></i></a>
+          </li>
+          {{end}}
+          {{block resume_menu}}
+          <li>
+          <a href="{{=URL('resume')}}"><i class="icon-list"><span>Resume</span></i></a>
+          </li>
+          {{end}}
+          {{block comment_menu}}
+          <li>
+          <a href="{{=URL('comment')}}"><i class="icon-comment"><span>Comment</span></i></a>
+          </li>
+          {{end}}
+          {{block contact_menu}}
+          <li>
+          <a href="{{=URL('contact')}}" class="last"><i class="icon-envelope"><span>Contact</span></i></a>
+          </li>						
+          {{end}}
+        </ul>
+    
+      </div>
+    
+    </div><!-- / Container -->
+    
+    </nav><!-- / Navigation -->
+
+
+	</header><!-- / Header -->
+	
+  <!-- Content -->
+
+  {{include}}
+
+  <!-- / Content -->
+	
+	<!-- Footer -->
+	<footer id="footer">
+    {{include 'common/footer.html'}}
+	</footer><!-- / Footer -->
+	
+
+</div><!-- / Wrapper -->
+
+
+<!-- Javascript
+================================================== -->
+<script type="text/javascript" src="{{=URL('static', 'js/jquery-1.7.1.min.js')}}"></script>
+<script type="text/javascript" src="{{=URL('static', 'js/waypoints.min.js')}}"></script>
+<script type="text/javascript" src="{{=URL('static', 'js/waypoints-sticky.min.js')}}"></script>
+<script type="text/javascript" src="{{=URL('static', 'js/jquery.cycle2.js')}}"></script>
+<script type="text/javascript" src="{{=URL('static', 'js/mediaelement-and-player.min.js')}}"></script>
+<script type="text/javascript" src="{{=URL('static', 'js/tweetie.js')}}"></script>
+<script type="text/javascript" src="{{=URL('static', 'js/script.js')}}"></script>
+<script type="text/javascript">
+$('.tweet').twittie();
+</script>
+
+<!-- Styleswitcher -->
+<script type="text/javascript" src="{{=URL('static', 'js/cookie.js')}}"></script>
+<script type="text/javascript" src="{{=URL('static', 'js/styleswitcher.js')}}"></script>
+
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

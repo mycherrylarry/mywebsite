@@ -1,0 +1,125 @@
+/* Template: Syntac | Author: eriktailor | Version: 1.0 */
+/*--------------------------------------------------------------------- */
+
+	/* BASE ----------------------------------*/
+	#styleswitcher {position: fixed; top: 30%; left: -111px; z-index: 9999;}
+	
+	#styleswitcher-panel {width: 80px; padding: 15px; background: rgba(0, 0, 0, 0.7); position: relative; float: left;}
+	
+	#styleswitcher-panel span {color: #FFF; font-weight: 400; font-size: 16px; margin-left: 3px;}
+	
+	#styleswitcher-tab {width: 40px; height: 50px; background: rgba(0, 0, 0, 0.7); position: relative; float: left;}	
+	
+	#styleswitcher-tab a {text-decoration: none; line-height: 50px; text-align: center; width: 40px; display: block; height: 40px; color: #FFF; font-size: 25px; font-weight: 300;}
+	
+	#colors {display: table; height: auto; width: 100%; margin: 10px 0px;}
+
+	#colors li {display: block; width: 28px; height: 28px; float: left; margin: 3px;}
+	
+	#colors li a {display: table; width: 28px; height: 28px;}
+
+	.color-01 {background-color: #DD3C26;}
+	.color-02 {background-color: #37A58C;}
+
+	
+	
+
+	
+	.red .page-title span {color: #DD3C26;}
+	.red .name-area h1 {background: #DD3C26;}
+	.red .menu .active {background: #DD3C26;}
+	.red .menu .active .bullet {background-image: url("../img/bullets/menu_bullet_red.png");}
+	.red .menu .active i {color: #F0F0F0; border-top: 2px solid #e7c2bd;}
+	.red .submenu a:hover, .red .submenu a.active, .red .submenu-active span, .red .submenu-active i {color: #DD3C26;}
+	.red .button-bar {background-color: #DD3C26;}
+	.red .button:hover {background: #F0F0F0; color: #DD3C26;}
+	.red .social-networks a:hover i {color: #DD3C26;}
+	.red #profile {background-color: #DD3C26;}
+	.red .profile-tabs .active {background: #DD3C26;}
+	.red .twitter-sign i {font-size: 57px; color: #DD3C26;}
+	.red .twitter a:hover {color: #DD3C26; text-decoration: none;}
+	.red .tweet span {color: #DD3C26;}
+	.red .process-part .icon-box i {color: #DD3C26;}
+	.red #testimonials {background-color: #DD3C26;}
+	.red .price-table h3 {background-color: #DD3C26;}
+	.red .price-table .button {color: #DD3C26; border-color: #DD3C26;}
+	.red .pricing-bullet-bottom {background-image: url('../img/bullets/portfolio_bullet_red.png');}
+	.red .filter .selected i, .red .filter .selected span {color: #DD3C26;}
+	.red .portfolio-item span {color: #DD3C26;}
+	.red .portfolio-item:hover {background: #DD3C26;}
+	.red .overlay .bullet {width: 26px; height: 12px; background-image: url('../img/bullets/portfolio_bullet_red.png');}
+	.red .resume-icon-box {background: #DD3C26;}
+	.red .resume-content-box span {color: #DD3C26;}
+	.red .resume-bullet-right {background-image: url('../img/bullets/resume_bullet_right_red.png');}
+	.red .resume-bullet-left {background-image: url('../img/bullets/resume_bullet_left_red.png');}
+	.red .resume-bullet-bottom {background-image: url('../img/bullets/resume_bullet_bottom_red.png');}
+	.red .post-preview-content-box span {color: #DD3C26;}
+	.red #blog a {color: #DD3C26;}
+	.red .post-icon-box {background: #DD3C26;}
+	.red .post-bullet-right {background-image: url('../img/bullets/resume_bullet_right_red.png');}
+	.red .sidebar .tags li a:hover {color: #DD3C26 !important;}
+	.red .skill-tip {background: #DD3C26;}
+	.red .award-header {background: #DD3C26;}
+	.red #contact {background-color: #DD3C26;}
+	.red .contact-details i	{color: #DD3C26;}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	.turq .page-title span {color: #37A58C;}
+	.turq .name-area h1 {background: #37A58C;}
+	.turq .menu .active {background: #37A58C;}
+	.turq .menu .active .bullet {background-image: url("../img/bullets/menu_bullet_turq.png");}
+	.turq .menu .active i {color: #F0F0F0; border-top: 2px solid #e7c2bd;}
+	.turq .submenu a:hover, .turq .submenu a.active, .turq .submenu-active span, .turq .submenu-active i {color: #37A58C;}
+	.turq .button-bar {background-color: #37A58C;}
+	.turq .button:hover {background: #F0F0F0; color: #37A58C;}
+	.turq .social-networks a:hover i {color: #37A58C;}
+	.turq #profile {background-color: #37A58C;}
+	.turq .profile-tabs .active {background: #37A58C;}
+	.turq .twitter-sign i {font-size: 57px; color: #37A58C;}
+	.turq .twitter a:hover {color: #37A58C; text-decoration: none;}
+	.turq .tweet span {color: #37A58C;}
+	.turq .process-part .icon-box i {color: #37A58C;}
+	.turq #testimonials {background-color: #37A58C;}
+	.turq .price-table h3 {background-color: #37A58C;}
+	.turq .price-table .button {color: #37A58C; border-color: #37A58C;}
+	.turq .pricing-bullet-bottom {background-image: url('../img/bullets/portfolio_bullet_turq.png');}
+	.turq .filter .selected i, .turq .filter .selected span {color: #37A58C;}
+	.turq .portfolio-item span {color: #37A58C;}
+	.turq .portfolio-item:hover {background: #37A58C;}
+	.turq .overlay .bullet {width: 26px; height: 12px; background-image: url('../img/bullets/portfolio_bullet_turq.png');}
+	.turq .resume-icon-box {background: #37A58C;}
+	.turq .resume-content-box span {color: #37A58C;}
+	.turq .resume-bullet-right {background-image: url('../img/bullets/resume_bullet_right_turq.png');}
+	.turq .resume-bullet-left {background-image: url('../img/bullets/resume_bullet_left_turq.png');}
+	.turq .resume-bullet-bottom {background-image: url('../img/bullets/resume_bullet_bottom_turq.png');}
+	.turq .post-preview-content-box span {color: #37A58C;}
+	.turq #blog a {color: #37A58C;}
+	.turq .post-icon-box {background: #37A58C;}
+	.turq .post-bullet-right {background-image: url('../img/bullets/resume_bullet_right_turq.png');}
+	.turq .sidebar .tags li a:hover {color: #37A58C !important;}
+	.turq .skill-tip {background: #37A58C;}
+	.turq .award-header {background: #37A58C;}
+	.turq #contact {background-color: #37A58C;}
+	.turq .contact-details i	{color: #37A58C;}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
